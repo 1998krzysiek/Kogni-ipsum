@@ -1,0 +1,3 @@
+[0521/180600.504:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Odmowa dostêpu. (0x5)
+[0521/180600.639:ERROR:main_dll_loader_win.cc(140)] Failed to load Chrome DLL from C:\Program Files (x86)\Doeye\Application\57.0.2987.98\chrome.dll: Nie mo¿na odnaleŸæ okreœlonego modu³u. (0x7E)
+[0521/180600.717:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Odmowa dostêpu. (0x5)
