@@ -9,3 +9,9 @@ def losowanie_cytatu(lista_kogni,wybor):
 ####
 ilosc = int(input("Podaj ilość zdań: "))
 print(losowanie_cytatu(luzacki_kognitywista, ilosc))
+def ilosc_akapitow(lista_kogni, wybor):
+    for i in range(0, wybor):
+        zdanie=random.choice(lista_kogni)
+        lista_kogni.remove(zdanie)
+        print(zdanie, '\n')
+
