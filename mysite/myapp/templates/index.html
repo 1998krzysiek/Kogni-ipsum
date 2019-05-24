@@ -1,1 +1,43 @@
-a{{skrypt}}
+﻿<!DOCTYPE html>
+<html lang="en">
+<body bgcolor="#FFFF00">
+<head>
+    <title>Kogni Ipsum</title>
+</head>
+<center>
+<script>
+
+function getText(){
+
+      var pole = document.getElementById("pole")
+      var div = document.getElementById("content")
+      div.innerHTML = "Zawartosc pola : <strong>"+pole.value+"</strong>"
+
+}
+
+</script>
+<p>Witam w generatorze tekstu Kogni Ipsum!
+<br>Program składa się z dwóch odrębnych baz danych,
+<br>dzięki którym można wygenerować sobie losowy tekst,
+<br>odrębne zdania, bądź też konkretną ilość akapitów </p>
+<br>
+<br>
+
+<p>Podaj ilość zdań:
+<input type="text" name="Zdania" id="pole" size="10" maxlength="9"> <button type="button" onclick="getText()">Generuj zdania</button>
+<br>
+Podaj ilość akapitów:
+<input type="text" name="Zdania" id="znajdz" size="10" maxlength="9"> <button type="button" onclick="getText()">Generuj zdania</button>
+</p>
+</center>
+<div id="content">
+Tu bedzie tresc
+</div>
+<div id="kolejna">
+Tu będzie z drugiego
+</div>
+ <a href='http://www.counterliczniki.com'>liczniki odwiedzin</a> <script type='text/javascript' src='https://www.counterliczniki.com/auth.php?id=9be829108515374b913add0f45f2b477719f711f'></script>
+<script type="text/javascript" src="https://www.counterliczniki.com/pl/home/counter/531041/t/0"></script>
+</body>
+ 
+</html>
