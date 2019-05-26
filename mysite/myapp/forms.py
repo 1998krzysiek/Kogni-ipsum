@@ -1,4 +1,7 @@
 from django import forms
 
 class ContactForm(forms.Form):
-	name = forms.CharField()
+	rand = forms.CharField()
+
+class ContactForm2(forms.Form):
+	aka = forms.CharField()
