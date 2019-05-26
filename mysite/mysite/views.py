@@ -55,3 +55,23 @@ def index(request):
 					lista.append(cytat)
 				lista=' '.join(lista)
 				wynik=lista
+			elif form2.is_valid():
+				name=form2.cleaned_data['aka']
+				for i in range(int(name)+1):
+					for j in range(0,rm.randint(3,15)):
+						cytat=rm.choice(m)
+						m.remove(cytat)
+						lista.append(cytat+" ")
+					if i==1:
+						None
+					else:
+						lista.append('\n\n')
+				lista=''.join(lista)
+				wynik2=lista
+		except ValueError:
+			pass
+		except IndexError:
+			pass
+	form = ContactForm()
+	form2 = ContactForm2()
+	return render(request,'index.html', {'form': form, 'form2': form2, 'skrypt': wynik, 'skrypt2': wynik2})
