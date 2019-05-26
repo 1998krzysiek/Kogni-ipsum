@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>myapp</title>
+</head>
+<body>
+<body bgcolor="#808000">
+<script>
+function refresh() {
+	history.replaceState(null, null);
+}
+refresh();
+</script>
+<style>
+label {
+	display: none;
+}
+</style>
+<form method="POST">
+	{% csrf_token %}
+	{{ form }}
+<button type="submit">Ilość zdań</button>
+</form>
+{{ skrypt }}
+<br>
+<form method="POST">
+	{% csrf_token %}
+	{{ form2 }}
+<button type="submit">Ilość akapitów</button>
+</form>
+{{ skrypt2|linebreaksbr }}
+</body>
+</html>
